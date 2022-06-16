@@ -1,0 +1,351 @@
+{
+  // "condition": { //模式配置，仅开发期间生效
+  // 	"current": 0, //当前激活的模式(list 的索引项)
+  // 	"list": [{
+  // 		"name": "test", //模式名称
+  // 		"path": "pages/componentsA/test/test", //启动页面，必选
+  // 		"query": "" //启动参数，在页面的onLoad函数里面得到
+  // 	}]
+  // },
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    // 业务界面
+    // 登录
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false
+      }
+    },
+    // 首页
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": "100rpx",
+        "navigationBarBackgroundColor": "#01c1a9"
+      }
+    },
+    // 工作台
+    {
+      "path": "pages/workbench/index",
+      "style": {
+        "navigationBarTitleText": "工作台",
+        "enablePullDownRefresh": false
+      }
+    },
+    // 通讯录
+    {
+      "path": "pages/maillist/index",
+      "style": {
+        "navigationBarTitleText": "通讯录",
+        "enablePullDownRefresh": false
+      }
+    },
+    // 我的
+    {
+      "path": "pages/profile/index",
+      "style": {
+        // "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    // 新增质量缺陷
+    {
+      "path": "pages/index/quality/addQuality",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 质量缺陷列表
+    {
+      "path": "pages/index/quality/qualityList",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 质量缺陷列表历史记录列表
+    {
+      "path": "pages/index/quality/qualityHistory",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 200,
+        "navigationStyle": "custom",
+        "backgroundColor":"#F3F7F7"
+      }
+    },
+    // 质量缺陷整改详情
+    {
+      "path": "pages/index/quality/rectify",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 质量缺陷历史整改详情
+    {
+      "path": "pages/index/quality/rectifyHistory",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 新增安全督查
+    {
+      "path": "pages/index/safe/addSafe",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 安全督查列表
+    {
+      "path": "pages/index/safe/safeList",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 安全督查历史记录列表
+    {
+      "path": "pages/index/safe/safeHistory",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 200,
+        "navigationStyle": "custom",
+        "backgroundColor":"#F3F7F7"
+      }
+    },
+    // 安全整改详情
+    {
+      "path": "pages/index/safe/rectify",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 安全历史整改详情
+    {
+      "path": "pages/index/safe/rectifyHistory",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    // 现场管控
+    {
+      "path": "pages/index/plan/siteControl",
+      "style": {
+        "enablePullDownRefresh": false,
+        // "navigationBarTitleText": "现场管控",
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+    // 开工申请
+    {
+      "path": "pages/index/plan/workApply",
+      "style": {
+        "enablePullDownRefresh": false,
+        // "navigationBarTitleText": "开工申请",
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+    // 间断申请
+    {
+      "path": "pages/index/plan/pauseWorkApply",
+      "style": {
+        "enablePullDownRefresh": false,
+        // "navigationBarTitleText": "间断申请",
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+    // 终结申请
+    {
+      "path": "pages/index/plan/finishWorkApply",
+      "style": {
+        "enablePullDownRefresh": false,
+        // "navigationBarTitleText": "终结申请",
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+    // 同步到I国网
+    {
+      "path": "pages/index/plan/syncSiteDetail",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+    // I国网图片详情
+    {
+      "path": "pages/index/plan/syncSitePicDetail",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#01c1a9",
+        "navigationBarTextStyle":"white"
+      }
+    },
+
+    // rtc视频通话界面
+    {
+      "path": "pages/rtc/index",
+      "style": {
+        "navigationBarTitleText": "AR-Call",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleView": false,
+          "subNVues": [{ // 弹窗
+            "id": "poPup", // 唯一标识  
+            "path": "paltfrom/app-plus/subNVue/poPup", // 页面路径  
+            /*"type": "popup",  这里不需要*/
+            "style": {
+              "position": "static",
+              "dock": "top",
+              "top": "80px",
+              "width": "100%",
+              "height": "100%",
+              "background": "transparent",
+              "zindex": 999
+            }
+          }]
+        }
+      }
+    },
+    {
+      "path": "pages/rtc/p2p",
+      "style": {
+        "navigationBarTitleText": "AR-Call",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleView": false,
+          "subNVues": [{ // 弹窗
+            "id": "poPup-p2p", // 唯一标识  
+            "path": "paltfrom/app-plus/subNVue/poPup", // 页面路径  
+            /*"type": "popup",  这里不需要*/
+            "style": {
+              "position": "static",
+              "dock": "top",
+              "top": "80px",
+              "width": "100%",
+              "height": "100%",
+              "background": "transparent",
+              "zindex": 999
+            }
+          }]
+        }
+      }
+    },
+    {
+      "path": "pages/rtc/rtmPage",
+      "style": {
+        "navigationBarTitleText": "实时消息",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleView": false,
+          "subNVues": [{ // 弹窗
+              "id": "poPup-rtm", // 唯一标识  
+              "path": "paltfrom/app-plus/subNVue/poPup", // 页面路径  
+              "style": {
+                "position": "static",
+                "dock": "top",
+                "top": "80px",
+                "width": "100%",
+                "height": "100%",
+                "background": "transparent",
+                "zindex": 999
+              }
+            },
+            { // 弹窗
+              "id": "CavasViewRTC", // 唯一标识  
+              "path": "paltfrom/app-plus/subNVue/rtcPage", // 页面路径  
+              "style": {
+                "position": "static",
+                "dock": "top",
+                "width": "100%",
+                "height": "100%",
+                "background": "transparent",
+                "zindex": 888
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "pages/rtc/set",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+          "bounce": "none"
+        }
+      }
+    } 
+  ],
+  "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "static/images/tabbar/index.png",
+          "selectedIconPath": "static/images/tabbar/index_active.png"
+        },
+        {
+          "pagePath": "pages/workbench/index",
+          "text": "工作台",
+          "iconPath": "static/images/tabbar/workbench.png",
+          "selectedIconPath": "static/images/tabbar/workbench_active.png"
+        },
+        {
+          "pagePath": "pages/maillist/index",
+          "text": "通讯录",
+          "iconPath": "static/images/tabbar/maillist.png",
+          "selectedIconPath": "static/images/tabbar/maillist_active.png"
+        },
+        {
+          "pagePath": "pages/profile/index",
+          "text": "我的",
+          "iconPath": "static/images/tabbar/profile.png",
+          "selectedIconPath": "static/images/tabbar/profile_active.png"
+        }
+      ],
+      "color": "#474747",
+      "font-family": "PingFangSC-Medium, PingFang SC",
+      "selectedColor": "#01c1a9"
+    },
+    "condition": { //模式配置，仅开发期间生效
+    		"current": 0, //当前激活的模式（list 的索引项）
+    		"list": [{
+    			"name": "test", //模式名称
+    			"path": "pages/login/index" //启动页面，必选
+    		}]
+    	},
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uView",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  }
+}
